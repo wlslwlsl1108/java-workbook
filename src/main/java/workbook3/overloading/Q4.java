@@ -13,8 +13,8 @@ public class Q4 {
         return w * h;                                 // 직사각형 넓이 반환
     }
     // 삼각형의 넓이 계산 //
-    static double area(double b, double h, double i) {
-        return b * h * i;                             // 삼각형 넓이 반환 (위 타입과 동일하여 에러발생으로 변수 i 추가)
+    static double area(int b, int h) {
+        return b * h * 0.5;                             // 삼각형 넓이 반환 (위 타입과 동일하여 에러발생으로 변수 i 추가)
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);          // Scanner 생성
@@ -29,10 +29,9 @@ public class Q4 {
             System.out.println(area(w,h));            // 사각형 넓이
 
         } else if (type.equals("tri")) {              // 삼각형
-            double b = sc.nextDouble();               // 밑변 입력
-            double h = sc.nextDouble();               // 높이 입력
-            double i = 0.5;                           // i 에 0.5 대입  -> 임의로 추가 (위 타입과 같아 에러발생해서)
-            System.out.println(area(b,h,i));          // 삼각형 넓이
+            int b = sc.nextInt();                     // 밑변 입력
+            int h = sc.nextInt();                     // 높이 입력
+            System.out.println(area(b,h));            // 삼각형 넓이
         }
     }
 }
