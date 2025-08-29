@@ -49,4 +49,12 @@ public class Q1 {
            -> 여기서 인자는 int 형을 받지만,
               실제로 반환하는 타입이 String 이기 때문에
               메서드 반환 타입에는 String을 적는다.
+
+              예시)
+                (X)   return i;                  -> 타입 불일치
+                (O)   return i + "";             -> int + String  => String 반환
+                (O)   return String.valueOf(i);  -> 명시적으로 String 반환
+
+                참고. String.valueOf() = 자바에서 제공하는 정적 메서드
+                         -> 정수 i를 문자열로 변환해주는 메서드
  */
