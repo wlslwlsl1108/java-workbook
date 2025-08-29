@@ -14,7 +14,7 @@ public class Q4 {
     }
     // 삼각형의 넓이 계산 //
     static double area(int b, int h) {
-        return b * h * 0.5;                             // 삼각형 넓이 반환 (위 타입과 동일하여 에러발생으로 변수 i 추가)
+        return b * h * 0.5;                           // 삼각형 넓이 반환 (위 타입과 동일하여 에러 발생, 타입 int로 변경)
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);          // Scanner 생성
@@ -35,3 +35,14 @@ public class Q4 {
         }
     }
 }
+
+/*
+    [ 오버로딩 ]
+       - 같은 이름의 메서드 여러 개 정의
+       - 매개 변수 차이 1) 매개변수 갯수가 달라야 함
+                      2) 매개변수 갯수 동일하면, 타입이 달라야 함
+
+    참고) 오버로딩에서 타입 및 갯수가 동일할 경우 오류 발생.
+          ex1. area(double w, double h)
+               area(double b, double h)   => 매개변수 2개 동일 / 타입 double로 동일
+ */
