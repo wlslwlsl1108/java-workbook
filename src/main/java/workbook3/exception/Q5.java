@@ -14,7 +14,9 @@ public class Q5 {
         int age = sc.nextInt();
         try {
             // TODO: age가 0보다 작으면 NegativeAgeException throw
-            throw new NegativeAgeException("Invalid age");
+            if (age < 0) {
+                throw new NegativeAgeException("Invalid age");
+            }
         } catch (NegativeAgeException e) {
             System.out.println(e.getMessage());
         }
