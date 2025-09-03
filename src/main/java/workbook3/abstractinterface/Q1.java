@@ -9,12 +9,14 @@ abstract class Animal {
 class Cat extends Animal {
     void sound() {
         // TODO: "Meow" 출력
+        System.out.println("Meow");
     }
 }
 
 class Dog extends Animal {
     void sound() {
         // TODO: "Woof" 출력
+        System.out.println("Woof");
     }
 }
 
