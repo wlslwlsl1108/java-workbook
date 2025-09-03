@@ -12,7 +12,9 @@ public class Q2 {
         }
         try {
             // TODO: index 입력 받기
+            int index = sc.nextInt();
             // TODO: arr[index] 출력
+            System.out.println(arr[index]);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Index out of bounds");
         }
