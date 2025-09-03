@@ -10,6 +10,23 @@ public class Q4 {
         String op = sc.next();
         try {
             // TODO: op에 따라 계산 및 출력
+            switch (op) {
+                case "+":
+                    System.out.println(a + b);
+                    break;
+
+                case  "-":
+                    System.out.println(a - b);
+                    break;
+
+                case "*":
+                    System.out.println(a * b);
+                    break;
+
+                case  "/":
+                    System.out.println(a / b);
+                    break;
+            }
         } catch (ArithmeticException e) {
             System.out.println("Division by zero");
         } catch (Exception e) {
