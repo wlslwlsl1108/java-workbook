@@ -11,6 +11,10 @@ class FileMissingException extends Exception {
 public class Q6 {
     static void openFile(String name) throws FileMissingException {
         // TODO: 파일이 없다고 가정하고 예외 throw
+        name = null;
+        if (name == null) {
+            throw new FileMissingException("");
+        }
     }
 
     public static void main(String[] args) {
